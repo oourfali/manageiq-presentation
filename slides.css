@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Venturis Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/venturis-sans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/source-sans-pro.woff2") format("woff2");
+}
+
+body {
+  font-family: "Source Sans Pro";
+  text-rendering: optimizelegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Venturis Sans";
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+/* Background images: */
+.remark-slide-content {
+  background-image: url("images/normal-bg.png");
+  background-position: 50% 0px;
+  background-repeat: repeat-x;
+  background-size: 100% auto;
+}
+
+.inverse {
+  background-image: url("images/inverse-bg.png");
+  color: #777872;
+}
+
+.inverse h1, .inverse h2 {
+  color: white;
+  line-height: 0.8em;
+}
+
+pre {
+  border-left: 4px solid #3c572b;
+  padding: 2.0 !important;
+}
+
+code {
+  background: transparent !important;
+}
+
+a {
+  color: #3c572b;
+  text-decoration: none;
+}
+
+/* Increase a bit the size of regular slides: */
+.remark-slide-content {
+  font-size: 1.6em;
+}
+
+/* Inline code looks a bit small, increase it a bit: */
+.remark-inline-code {
+  font-size: 1.2em;
+}
+
+/* To make text really large: */
+.huge {
+  font-size: 4.0em;
+}
+
+/* Dim all the bullet points except the current one in agendas: */
+.agenda li {
+  color: #777872;
+}
+
+.agenda li .current {
+  color: black;
+}
