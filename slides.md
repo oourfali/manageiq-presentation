@@ -1,6 +1,6 @@
 class: center, middle, inverse
 
-# oVirt 4 Provider
+# Present and future of the ManageIQ and oVirt integration
 
 ### [Piotr Kliczewski](mailto:pkliczew@redhat.com)
 ### [Juan Hernández](mailto:jhernand@redhat.com)
@@ -10,10 +10,12 @@ class: center, middle, inverse
 
 class: center, middle
 
-# Introduction
+# Objective
 
-In this session we will present the proposal to create a new provider
-for oVirt 4.
+The objective of this session is to present the work that the oVirt and
+ManageIQ teams have been doing together to improve the integration of
+both systems for the ManageIQ Darga release, and the plans to improve it
+even further for the upcoming release of oVirt 4.
 
 ---
 
@@ -21,85 +23,122 @@ for oVirt 4.
 
 These are the items that we will cover in this session:
 
-- [Motivation](#motivation)
+- [Introduction](#introduction)
 
-- [New provider](#provider)
+- [Improvements for the Darga release](#darga)
 
-- [Targeted refresh](#refresh)
+- [Future improvements](#future)
 
 - [Demo](#demo)
 
 ---
 
-name: motivation
+name: introduction
 class: center, middle, inverse
 
-# Motivation
-
----
-
-## Motivation
-
-- Motivation 1
-- Motivation 2
-
----
-
-name: provider
-class: center, middle, inverse
-
-## New provider
-
----
-
-## New provider
-
-- Blah
-
-- Code
-
-```ruby
-class OVirt4::Provider
-  def connect
-    ...
-  end
-end
-```
+# Introduction
 
 ???
 
-Notes for the presenter
+In this introduction we should very quicly explain what is oVirt and how
+other systems can be integrated using the API.
 
 ---
 
-name: refresh
+# What is oVirt?
+
+- A virtualization platform.
+
+- Manages virtual machines, storage and networks.
+
+- Easy to use web interface, for humans.
+
+- Comprehensive REST API, for other systems.
+
+- Integrated with ManageIQ as a infrastructure provider, via the REST
+  API.
+
+???
+
+Worth also mentioning that it is Open Source, and based on KVM and
+Linux.
+
+---
+
+name: darga
 class: center, middle, inverse
 
-# Targeted refresh
+# Improvements for the darga release
 
 ---
 
 ## Targeted refresh
 
-- Blah
+- What is the current situation with refresh?
 
-- Code
+- Why was a change needed?
 
-```ruby
-class OVirt4::Refresher
-  def refresh
-    ...
-  end
-end
-```
+- What was actually changed?
+
+- Why is that good for users/developers?
 
 ???
 
-Notes for the presenter
+These are some questions that we may want to answer during the
+presentation.
 
 ---
 
-name: refresh
+## Targeted refresh, the architecture
+
+![Diagram](diagram.png)
+
+???
+
+The `diagram.png` file doesn't exist yet, so only the text `Diagram`
+will be displayed.
+
+---
+
+## Targeted refresh, the numbers
+
+???
+
+Some numbers to proof the possitive effect of targeted refresh.
+
+---
+
+## Gluster support
+
+---
+
+## Initial support for version 4 of oVirt
+
+- Version 4 of oVirt will support two versions of the API
+
+- Version 3 of the API will be identical to the current one
+
+- New features will only be available in version 4 of the API
+
+- Initial suppport for the API backwards compatibility mode has been
+  added, so that Darga will work with version 4 of oVirt
+
+---
+
+name: future
+class: center, middle, inverse
+
+## Future improvements
+
+---
+
+## Future improvements
+
+- Gradually swith from the `ovirt` tem to the new oVirt Ruby SDK
+
+---
+
+name: demo
 class: center, middle, inverse
 
 ## Demo
