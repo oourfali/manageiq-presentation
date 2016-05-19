@@ -1,6 +1,9 @@
 class: center, middle, inverse
 
-# Present and future of the ManageIQ and oVirt integration
+# The next level oVirt provider
+
+## What did we do
+## and how can you do it too!
 
 ### [Piotr Kliczewski](mailto:pkliczew@redhat.com)
 ### [Juan Hernández](mailto:jhernand@redhat.com)
