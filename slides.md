@@ -71,35 +71,29 @@ Linux.
 name: darga
 class: center, middle, inverse
 
-# Improvements for the Darga release
+## Improvements for the Darga release
+
+---
+
+## Improvements
+
+- Targeted refresh
+
+- Gluster support
+
+- oVirt 4 support - in progress
+
+---
+
+## Inventory refresh
+
+<img src="images/before.png" height="550" width="700">
 
 ---
 
 ## Targeted refresh
 
-- What is the current situation with refresh?
-
-- Why was a change needed?
-
-- What was actually changed?
-
-- Why is that good for users/developers?
-
-???
-
-These are some questions that we may want to answer during the
-presentation.
-
----
-
-## Targeted refresh, the architecture
-
-![Diagram](diagram.png)
-
-???
-
-The `diagram.png` file doesn't exist yet, so only the text `Diagram`
-will be displayed.
+<img src="images/after.png" height="550" width="700">
 
 ---
 
@@ -107,11 +101,28 @@ will be displayed.
 
 ???
 
-Some numbers to proof the possitive effect of targeted refresh.
+Let's wait for the results from scale testing
+
+---
+
+## Changes needed to target refreshes
+
+- implement collect_inventory_for_targets
+  and use ExtManagementSystem, Host, VmOrTemplate
+
+- implement parse_targeted_inventory
+
+- understand data model dependencies
 
 ---
 
 ## Gluster support
+
+- new storage type for data-store tree
+
+- new icon to be shown on the data store quadicon for gluster
+
+- support for GlusterFS in SSA
 
 ---
 
