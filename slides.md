@@ -15,10 +15,9 @@ class: center, middle
 
 # Objective
 
-The objective of this session is to present the work that the oVirt and
-ManageIQ teams have been doing together to improve the integration of
-both systems for the ManageIQ Darga release, and the plans to improve it
-even further for the upcoming release of oVirt 4.
+Present the work that the oVirt and the ManageIQ team have been doing together
+in the Darga release, show how you can do similar things for your provider, 
+and share the future plans to make additional improvements working with the upcoming oVirt 4 release.
 
 ---
 
@@ -58,7 +57,7 @@ other systems can be integrated using the API.
 
 - Comprehensive REST API, for other systems.
 
-- Integrated with ManageIQ as a infrastructure provider, via the REST
+- Integrated with ManageIQ as an infrastructure provider, via the REST
   API.
 
 ???
@@ -86,10 +85,19 @@ class: center, middle, inverse
 ---
 
 ## Inventory refresh
+- When you add the infrastructure provider ManageIQ does a full inventory refresh
+- This full refresh also takes place when identifying various events that happened on the oVirt environment
+- On scaled environments the full refresh takes a long time... which affects the time it takes for changes to be reflected in the ManageIQ UI
+- Why full when we can identify what objects changed, and update only those objects?
+
+---
+
+## Inventory refresh
 
 <img src="images/before.png" height="550" width="700">
 
 ---
+
 
 ## Targeted refresh
 
